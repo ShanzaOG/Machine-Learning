@@ -12,7 +12,7 @@ cap = cv2.VideoCapture(0)
 
 mpHands = mp.solutions.hands
 hands = mpHands.Hands()
-mpDraw = mp.solutions.drawing_utils
+mpDraw = mp.solutions.drawing_utils  # Used for drawing
 
 pTime = 0
 cTime = 0
@@ -49,5 +49,3 @@ while True:
 
     cv2.imshow("Image", img)
     cv2.waitKey(1)
-
-
